@@ -132,8 +132,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Participants\Create.cshtml" />
     <Content Include="Views\Participants\Delete.cshtml" />
-    <Content Include="Views\Participants\Details.cshtml" />
-    <Content Include="Views\Participants\Edit.cshtml" />
     <Content Include="Views\Participants\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">

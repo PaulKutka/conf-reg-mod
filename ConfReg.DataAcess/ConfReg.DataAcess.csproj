@@ -50,6 +50,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfRegDb.cs" />
+    <Compile Include="Migrations\201702201702429_InitialCreate.cs" />
+    <Compile Include="Migrations\201702201702429_InitialCreate.Designer.cs">
+      <DependentUpon>201702201702429_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702231744161_Validation1.cs" />
+    <Compile Include="Migrations\201702231744161_Validation1.Designer.cs">
+      <DependentUpon>201702231744161_Validation1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +70,14 @@
       <Project>{7B6E6ABA-5BD3-4110-8F1E-8C4E064FAC71}</Project>
       <Name>ConfReg.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702201702429_InitialCreate.resx">
+      <DependentUpon>201702201702429_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702231744161_Validation1.resx">
+      <DependentUpon>201702231744161_Validation1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -10,3 +10,6 @@ C:\Projects\conf-reg-mod\ConfReg.DataAcess\bin\Debug\EntityFramework.SqlServer.x
 C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.csprojResolveAssemblyReference.cache
 C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.dll
 C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.pdb
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.InitialCreate.resources
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.csproj.GenerateResource.Cache
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.Validation1.resources
