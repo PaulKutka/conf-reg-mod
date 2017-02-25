@@ -4,48 +4,48 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Dalyvių sąrašas</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Naujas dalyvis", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Degree)
+            Laipsnis
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            Vardas
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Surname)
+            Pavardė
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Institution)
+            Institucija
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Email)
+            El. Paštas
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+            Telefono numeris
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AnnName)
+            Pranešimo pavadinimas
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AnnAuthorsAndAff)
+            Pranešimo autoriai ir afiliacijos
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AnnSummary)
+            Pranešimo santrauka
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.RoomType)
+            Kambario tipas
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AccPerson)
+            Ar dalyvaus papildomuose renginiuose
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.InvoiceReq)
+            Ar reikalinga sąskaita - faktūra
         </th>
         <th></th>
     </tr>
@@ -89,8 +89,6 @@
             @Html.DisplayFor(modelItem => item.InvoiceReq)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
     </tr>
