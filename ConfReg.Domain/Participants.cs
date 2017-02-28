@@ -26,6 +26,8 @@ namespace ConfReg.Domain
         
         public string Email { get; set; }
 
+        //public bool ConfirmedEmail { get; set; }
+
         [Required(ErrorMessage = "Šis laukas yra privalomas")]
         public string PhoneNumber { get; set; }
 

@@ -17,6 +17,7 @@ namespace ConfReg.DataAcess.Migrations
                         Surname = c.String(),
                         Institution = c.String(),
                         Email = c.String(),
+                        ConfirmedEmail = c.Boolean(),
                         PhoneNumber = c.String(),
                         AnnName = c.String(),
                         AnnAuthorsAndAff = c.String(),
@@ -26,7 +27,6 @@ namespace ConfReg.DataAcess.Migrations
                         InvoiceReq = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
-            
         }
         
         public override void Down()

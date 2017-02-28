@@ -3,3 +3,8 @@ C:\Projects\conf-reg-mod\ConfReg.Domain\bin\Debug\ConfReg.Domain.pdb
 C:\Projects\conf-reg-mod\ConfReg.Domain\obj\Debug\ConfReg.Domain.csprojResolveAssemblyReference.cache
 C:\Projects\conf-reg-mod\ConfReg.Domain\obj\Debug\ConfReg.Domain.dll
 C:\Projects\conf-reg-mod\ConfReg.Domain\obj\Debug\ConfReg.Domain.pdb
+C:\Users\Cinkupis\Source\Repos\conf-reg-mod\ConfReg.Domain\bin\Debug\ConfReg.Domain.dll
+C:\Users\Cinkupis\Source\Repos\conf-reg-mod\ConfReg.Domain\bin\Debug\ConfReg.Domain.pdb
+C:\Users\Cinkupis\Source\Repos\conf-reg-mod\ConfReg.Domain\obj\Debug\ConfReg.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Cinkupis\Source\Repos\conf-reg-mod\ConfReg.Domain\obj\Debug\ConfReg.Domain.dll
+C:\Users\Cinkupis\Source\Repos\conf-reg-mod\ConfReg.Domain\obj\Debug\ConfReg.Domain.pdb

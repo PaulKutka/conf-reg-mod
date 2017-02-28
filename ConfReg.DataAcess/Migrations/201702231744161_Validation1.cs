@@ -11,6 +11,7 @@ namespace ConfReg.DataAcess.Migrations
             AlterColumn("dbo.Participants", "Surname", c => c.String(nullable: false));
             AlterColumn("dbo.Participants", "Institution", c => c.String(nullable: false));
             AlterColumn("dbo.Participants", "Email", c => c.String(nullable: false));
+            //AlterColumn("dbo.Participants", "ConfirmedEmail", c => c.Boolean(nullable: false));
             AlterColumn("dbo.Participants", "PhoneNumber", c => c.String(nullable: false));
             AlterColumn("dbo.Participants", "AnnName", c => c.String(nullable: false));
             AlterColumn("dbo.Participants", "AnnAuthorsAndAff", c => c.String(nullable: false));
@@ -26,6 +27,7 @@ namespace ConfReg.DataAcess.Migrations
             AlterColumn("dbo.Participants", "AnnName", c => c.String());
             AlterColumn("dbo.Participants", "PhoneNumber", c => c.String());
             AlterColumn("dbo.Participants", "Email", c => c.String());
+            //AlterColumn("dbo.Participants", "ConfirmedEmail", c => c.Boolean());
             AlterColumn("dbo.Participants", "Institution", c => c.String());
             AlterColumn("dbo.Participants", "Surname", c => c.String());
             AlterColumn("dbo.Participants", "Name", c => c.String());
