@@ -96,8 +96,12 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.RoomType, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <label class = "control-label col-md-2">Ar reikalingas viešbučio kambarys?</label>
+            <div class="col-md-1 vAllign">
+                <div><input type="radio" value="Ne" name="RoomRadio" checked>Ne</div>
+                <div><input type="radio" value="Taip" name="RoomRadio">Taip</div>
+            </div>
+            <div class="col-md-12 vAllign">
                 @Html.EnumDropDownListFor(model => model.RoomType, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.RoomType, "", new { @class = "text-danger" })
             </div>
@@ -127,10 +131,8 @@
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>
 <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/ViewUtilities/RadioScripts.js"></script>
