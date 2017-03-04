@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccPerson.cs" />
+    <Compile Include="CustomAttributes\ContainsCharAttribute.cs" />
+    <Compile Include="CustomAttributes\MaxWordsAttribute.cs" />
     <Compile Include="Degree.cs" />
     <Compile Include="InvoiceReq.cs" />
     <Compile Include="Participants.cs" />

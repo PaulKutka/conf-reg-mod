@@ -13,3 +13,8 @@ C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.pdb
 C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.InitialCreate.resources
 C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.csproj.GenerateResource.Cache
 C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.Validation1.resources
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.TestMaxAttr.resources
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.MaxWordsAttrFinal.resources
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.Test2.resources
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.ContainsCharAttr.resources
+C:\Projects\conf-reg-mod\ConfReg.DataAcess\obj\Debug\ConfReg.DataAcess.Migrations.DegreeProp.resources

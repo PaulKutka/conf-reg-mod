@@ -58,6 +58,26 @@
     <Compile Include="Migrations\201702231744161_Validation1.Designer.cs">
       <DependentUpon>201702231744161_Validation1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703032150119_TestMaxAttr.cs" />
+    <Compile Include="Migrations\201703032150119_TestMaxAttr.Designer.cs">
+      <DependentUpon>201703032150119_TestMaxAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703032156332_MaxWordsAttrFinal.cs" />
+    <Compile Include="Migrations\201703032156332_MaxWordsAttrFinal.Designer.cs">
+      <DependentUpon>201703032156332_MaxWordsAttrFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703032202437_Test2.cs" />
+    <Compile Include="Migrations\201703032202437_Test2.Designer.cs">
+      <DependentUpon>201703032202437_Test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703032221016_ContainsCharAttr.cs" />
+    <Compile Include="Migrations\201703032221016_ContainsCharAttr.Designer.cs">
+      <DependentUpon>201703032221016_ContainsCharAttr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703041152036_DegreeProp.cs" />
+    <Compile Include="Migrations\201703041152036_DegreeProp.Designer.cs">
+      <DependentUpon>201703041152036_DegreeProp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -77,6 +97,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702231744161_Validation1.resx">
       <DependentUpon>201702231744161_Validation1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703032150119_TestMaxAttr.resx">
+      <DependentUpon>201703032150119_TestMaxAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703032156332_MaxWordsAttrFinal.resx">
+      <DependentUpon>201703032156332_MaxWordsAttrFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703032202437_Test2.resx">
+      <DependentUpon>201703032202437_Test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703032221016_ContainsCharAttr.resx">
+      <DependentUpon>201703032221016_ContainsCharAttr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703041152036_DegreeProp.resx">
+      <DependentUpon>201703041152036_DegreeProp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

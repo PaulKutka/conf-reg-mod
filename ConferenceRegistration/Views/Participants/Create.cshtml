@@ -4,24 +4,35 @@
     ViewBag.Title = "Create";
 }
 
+@{
+    var items = new SelectList(new[]
+    {
+        new SelectListItem { Text = "", Value = ""},
+        new SelectListItem { Text = "Doc.", Value = "Docentas"},
+        new SelectListItem { Text = "Prof.", Value = "Profesorius"},
+        new SelectListItem { Text = "Dr.", Value = "Daktaras"},
+    }, "Text", "Value");
+}
+
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
+        <h2>Naujas dalyvis</h2>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            <label class = "control-label col-md-2">Laipsnis</label>
+            @Html.LabelFor(model => model.Degree, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EnumDropDownListFor(model => model.Degree, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownListFor(model => model.Degree, items, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.Degree, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Vardas</label>
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
@@ -29,7 +40,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Pavardė</label>
+            @Html.LabelFor(model => model.Surname, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Surname, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Surname, "", new { @class = "text-danger" })
@@ -37,7 +48,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Institucija</label>
+            @Html.LabelFor(model => model.Institution, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Institution, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Institution, "", new { @class = "text-danger" })
@@ -45,7 +56,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">El. Paštas</label>
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
@@ -53,7 +64,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Telefono numeris</label>
+            @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
@@ -61,7 +72,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Pranešimo pavadinimas</label>
+            @Html.LabelFor(model => model.AnnName, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.AnnName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.AnnName, "", new { @class = "text-danger" })
@@ -69,7 +80,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Pranešimo autoriai ir afiliacijos</label>
+            @Html.LabelFor(model => model.AnnAuthorsAndAff, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.AnnAuthorsAndAff, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.AnnAuthorsAndAff, "", new { @class = "text-danger" })
@@ -77,7 +88,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Pranešimo santrauka</label>
+            @Html.LabelFor(model => model.AnnSummary, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.AnnSummary, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.AnnSummary, "", new { @class = "text-danger" })
@@ -85,15 +96,15 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Kambario tipas</label>
+            @Html.LabelFor(model => model.RoomType, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EnumDropDownListFor(model => model.RoomType, htmlAttributes: new { @class = "form-control" })
+                @Html.EnumDropDownListFor(model => model.RoomType, new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.RoomType, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Ar dalyvaus papildomuose renginiuose?</label>
+            @Html.LabelFor(model => model.AccPerson, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EnumDropDownListFor(model => model.AccPerson, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.AccPerson, "", new { @class = "text-danger" })
@@ -101,7 +112,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-md-2">Kuriai institucijai turi būti išrašyta išankstinė sąskaita?</label>
+            @Html.LabelFor(model => model.InvoiceReq, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.InvoiceReq, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.InvoiceReq, "", new { @class = "text-danger" })
@@ -110,11 +121,15 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Registruotis" class="btn btn-default" />
+                <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>

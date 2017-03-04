@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using ConfReg.Domain.CustomAttributes;
 
 namespace ConfReg.Domain
 {
@@ -11,7 +7,7 @@ namespace ConfReg.Domain
     {
         public int Id { get; set; }
 
-        public Degree Degree { get; set; }
+        public string Degree { get; set; }
 
         [Required(ErrorMessage = "Šis laukas yra privalomas")]
         public string Name { get; set; }
@@ -23,7 +19,8 @@ namespace ConfReg.Domain
         public string Institution { get; set; }
 
         [Required(ErrorMessage = "Šis laukas yra privalomas")]
-        
+        [ContainsChar('@', ErrorMessage = "Neteisingas el. pašto formatas")]
+        [ContainsChar('.', ErrorMessage = "Neteisingas el. pašto formatas")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Šis laukas yra privalomas")]
@@ -36,7 +33,7 @@ namespace ConfReg.Domain
         public string AnnAuthorsAndAff { get; set; }
 
         [Required(ErrorMessage = "Šis laukas yra privalomas")]
-        [StringLength(400, ErrorMessage ="Santrauka turi būti ne ilgesnė kaip 400 simbolių")]
+        [MaxWords(400, ErrorMessage = "Santrauka negali viršyti 400 žodžių")]
         public string AnnSummary { get; set; }
 
         public RoomType RoomType { get; set; }
