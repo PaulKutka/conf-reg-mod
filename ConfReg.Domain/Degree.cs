@@ -9,7 +9,7 @@ namespace ConfReg.Domain
 {
     public enum Degree
     {
-        [Display(Name = "")]
+        [Display(Name = "Belaipsnio")]
         Without,
         [Display(Name = "Dr.")]
         Doctor,
